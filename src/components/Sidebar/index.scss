@@ -1,6 +1,6 @@
 .nav-bar{
     background: #181818;
-    width: 60px;
+    width: 65px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -18,7 +18,7 @@
             height: auto;
 
             &.sub-logo{
-                width: 50px;
+                width: 65px;
             }
         }
     }
@@ -33,7 +33,7 @@
         width: 100%;
         
         a{
-            font-size: 20px;
+            font-size: 1.8em;
             color: #4d4d4e;
             display: block;
             line-height: 51px;
@@ -51,12 +51,18 @@
                 svg{
                     opacity: 0;
                 }
+            
+            &::after{
+                opacity: 1;
             }
+        }
 
             &:after{
-                content: '';
-                font-size:9px;
-                letter-spacing: 2px;
+                content: "";
+                font-size: 10px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                letter-spacing: 1px;
                 position: absolute;
                 bottom: 0;
                 display: block;
@@ -66,7 +72,7 @@
                 transition: all 0.3s ease-out;
             }
 
-            &:first-child{
+        &:first-child{
                 &::after{
                     content: "HOME";
                 }
@@ -91,6 +97,7 @@
             }
         }
     }
+}
 
     ul{
         position: absolute;
@@ -111,8 +118,8 @@
                 
                 &:hover svg{
                     color: #ffd700;
+                    opacity: 85%;
                 }
             }
         }
     }
-}
