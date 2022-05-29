@@ -5,7 +5,9 @@ const Layout = () => {
     return (
         <div className='App'>
             <Sidebar/>
-            <div className='page'></div>
+            <div className='page'>
+                <span className='tags top-tags'>&lt;body&gt;</span>
+            </div>
         </div>
     );
 }
